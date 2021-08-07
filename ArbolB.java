@@ -70,7 +70,7 @@ public class ArbolB extends Applet
 		 
 		comentario.appendText("Arbol B de orden 1\n");
     comentario.appendText("Universidad de La Serena.\n");
-    comentario.appendText("Ing. en computación.\n");
+    comentario.appendText("Ing. en computaciï¿½n.\n");
     comentario.appendText("-----------------------------\n");
     reInit();
    }
@@ -137,7 +137,7 @@ public class ArbolB extends Applet
        comentario.setText("");
        comentario.appendText("Arbol B de orden 1\n");
        comentario.appendText("Universidad de La Serena.\n");
-       comentario.appendText("Ing. en computación.\n");
+       comentario.appendText("Ing. en computaciï¿½n.\n");
        comentario.appendText("-----------------------------\n");
 			 comentario.appendText("Arbol limpiado\n");
        reInit();
@@ -145,7 +145,7 @@ public class ArbolB extends Applet
      }
      else if (evento.target == random)
           {
-            comentario.appendText("Creación Aleatoria del Arbol\n");
+            comentario.appendText("Creaciï¿½n Aleatoria del Arbol\n");
             randomInsertar();
             return true;
           }
@@ -161,13 +161,13 @@ public class ArbolB extends Applet
 									 }		
                    else
 									 {
-                     comentario.appendText("Inserción del número "+numero.getText()+"\n");
+                     comentario.appendText("Inserciï¿½n del nï¿½mero "+numero.getText()+"\n");
                      insertar();
                    }
                    numero.setText(""); 
                  }
                  else 
-                   comentario.appendText("Ingrese el número a Insertar!!\n");
+                   comentario.appendText("Ingrese el nï¿½mero a Insertar!!\n");
                  return true;
                }
                else if (evento.target == borrar)
@@ -175,12 +175,12 @@ public class ArbolB extends Applet
                       if (!numero.getText().equals(""))
 											{
                         llave = Integer.parseInt(numero.getText());
-                        comentario.appendText("Borrado del número "+numero.getText()+"\n");
+                        comentario.appendText("Borrado del nï¿½mero "+numero.getText()+"\n");
                         borrar();
                         numero.setText("");
                       }
                       else
-                        comentario.appendText("Ingrese el número a Borrar!!\n");
+                        comentario.appendText("Ingrese el nï¿½mero a Borrar!!\n");
                       return true;
                     }
                     else if (evento.target == buscar)
@@ -188,19 +188,19 @@ public class ArbolB extends Applet
                            if (!numero.getText().equals(""))
 													 {
                              llave = Integer.parseInt(numero.getText());
-                             comentario.appendText("Búsqueda del número "+numero.getText()+"\n");
+                             comentario.appendText("Bï¿½squeda del nï¿½mero "+numero.getText()+"\n");
                              if (arbol23.buscar(llave))
                              {
-                               comentario.appendText("El número "+numero.getText()+" fué Encontrado\n");
+                               comentario.appendText("El nï¿½mero "+numero.getText()+" fuï¿½ Encontrado\n");
                                hi_key = llave;
                                repaint();
                              }
                              else
-                               comentario.appendText("El número "+numero.getText()+" no fué Encontrado\n");
+                               comentario.appendText("El nï¿½mero "+numero.getText()+" no fuï¿½ Encontrado\n");
                              numero.setText("");
                            }
                            else 
-                             comentario.appendText("Ingrese el número a Buscar!!\n");
+                             comentario.appendText("Ingrese el nï¿½mero a Buscar!!\n");
                            return true;
                          }
                          else return super.action(evento, arg);
@@ -256,8 +256,8 @@ public class ArbolB extends Applet
        if ((arbol23.nodo[ptr].datoizq == llave) || (arbol23.nodo[ptr].datoder == llave))
        {
          comentario.appendText("No se puede Insertar!!\n");
-         comentario.appendText("Sobrepasó el límite permitido\n");
-         comentario.appendText("Haga click en el botón Limpiar\n");
+         comentario.appendText("Sobrepasï¿½ el lï¿½mite permitido\n");
+         comentario.appendText("Haga click en el botï¿½n Limpiar\n");
        }
        arbol23.nodo[ptr].datoizq = 0;
        arbol23.nodo[ptr].datoder = 0;
@@ -299,7 +299,7 @@ public class ArbolB extends Applet
    public void insertar()
    {
      if (arbol23.buscar(llave))
-     	 comentario.appendText("El número "+llave+" ya está en el Arbol!!\n");
+     	 comentario.appendText("El nï¿½mero "+llave+" ya estï¿½ en el Arbol!!\n");
      else
      { 
        hi_key = llave;
@@ -327,10 +327,7 @@ public class ArbolB extends Applet
        repaint();
      }
      else
-       comentario.appendText("El número "+llave+" no fué Encontrado!!\n");
+       comentario.appendText("El nï¿½mero "+llave+" no fuï¿½ Encontrado!!\n");
      llave = -1;
    }
 }
-
-
-

@@ -7,7 +7,6 @@ public class NodoGUI
    public int valorizq;
    public int valorder;
    public boolean enuso;
- 
 
    public NodoGUI(int x, int y, int ancho, int alto)
    {
@@ -20,7 +19,6 @@ public class NodoGUI
       this.enuso = true;
    }
  
-
    public NodoGUI(int x, int y, int ancho, int alto, boolean enuso)
    {
       this.x = x;
@@ -31,7 +29,6 @@ public class NodoGUI
       this.valorder = 0;
       this.enuso = enuso;
    }
- 
 
    public NodoGUI(int x, int y, int ancho, int alto, int valorizq, int valorder)
    {
@@ -43,7 +40,4 @@ public class NodoGUI
       this.valorder = valorder;
       this.enuso = true;
    }
-
 }
-
-

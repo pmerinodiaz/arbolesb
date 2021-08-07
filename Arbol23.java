@@ -398,6 +398,3 @@ public class Arbol23
 		nodo[ptr].hijoder = NULL;
   }
 }
- 
-
-
